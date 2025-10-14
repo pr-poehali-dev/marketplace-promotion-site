@@ -52,7 +52,7 @@ const Index = () => {
         </div>
 
         {/* Three cards */}
-        <div className="grid lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1200px] mx-auto">
           {/* Card 1 */}
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -120,7 +120,7 @@ const Index = () => {
           </div>
 
           {/* Card 3 - Highlighted */}
-          <div className="group relative lg:row-span-1">
+          <div className="group relative md:col-span-2">
             <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
             <div className="relative h-full p-10 rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 to-secondary/5 backdrop-blur-xl hover:border-primary/50 transition-all duration-500">
               {/* Number badge */}
