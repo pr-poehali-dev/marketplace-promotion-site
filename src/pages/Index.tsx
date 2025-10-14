@@ -2,7 +2,7 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white text-foreground relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 text-foreground relative overflow-hidden">
       {/* Animated background patterns */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] animate-pulse" />
@@ -56,9 +56,9 @@ const Index = () => {
           {/* Card 1 */}
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative h-full p-10 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500">
+            <div className="relative h-full p-10 rounded-3xl border border-border/60 bg-white/80 backdrop-blur-sm shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:border-primary/30 transition-all duration-500">
               {/* Number badge */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold shadow-2xl">
+              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 1
               </div>
 
@@ -89,9 +89,9 @@ const Index = () => {
           {/* Card 2 */}
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative h-full p-10 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:border-secondary/30 transition-all duration-500">
+            <div className="relative h-full p-10 rounded-3xl border border-border/60 bg-white/80 backdrop-blur-sm shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:border-secondary/30 transition-all duration-500">
               {/* Number badge */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold shadow-2xl">
+              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 2
               </div>
 
@@ -122,15 +122,15 @@ const Index = () => {
           {/* Card 3 - Highlighted */}
           <div className="group relative md:col-span-2">
             <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary rounded-3xl blur-2xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" />
-            <div className="relative h-full p-10 rounded-3xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-500">
+            <div className="relative h-full p-10 rounded-3xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5 shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] hover:border-primary/40 transition-all duration-500">
               {/* Number badge */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold shadow-2xl">
+              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 3
               </div>
 
               {/* Special badge */}
               <div className="absolute -top-3 -right-3">
-                <div className="px-4 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-xs font-bold uppercase tracking-wider shadow-2xl flex items-center gap-2">
+                <div className="px-4 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-xs font-bold uppercase tracking-wider text-white shadow-[0_8px_30px_rgba(0,0,0,0.2)] flex items-center gap-2">
                   <Icon name="Sparkles" size={14} />
                   Уникально
                 </div>
