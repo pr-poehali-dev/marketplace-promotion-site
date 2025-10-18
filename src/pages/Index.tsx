@@ -202,12 +202,12 @@ const Index = () => {
             Схема работы
           </h2>
 
-          <div className="max-w-6xl mx-auto relative">
-            {/* Connecting line - desktop */}
-            <div className="hidden md:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20" />
-            
-            {/* Steps */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+          <div className="max-w-6xl mx-auto">
+            {/* Top 3 steps */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 relative">
+              {/* Connecting line for top row */}
+              <div className="hidden md:block absolute top-10 left-[16.66%] right-[16.66%] h-0.5 bg-gradient-to-r from-primary/40 via-primary/60 to-primary/40" />
+              
               {/* Step 1 */}
               <div className="group relative flex flex-col items-center text-center">
                 <div className="relative mb-6">
@@ -255,7 +255,10 @@ const Index = () => {
                   Создаем и согласовываем рекламные креативы
                 </p>
               </div>
+            </div>
 
+            {/* Bottom row with 2 steps and CTA */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               {/* Step 4 */}
               <div className="group relative flex flex-col items-center text-center">
                 <div className="relative mb-6">
@@ -287,10 +290,26 @@ const Index = () => {
                   Анализируем полученные цифры и масштабируемся
                 </p>
               </div>
-            </div>
 
-            {/* Vertical connecting lines - mobile */}
-            <div className="md:hidden absolute left-10 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20" />
+              {/* CTA Block */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity" />
+                <div className="relative p-8 rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-secondary/5 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-300">
+                  <div className="mb-4">
+                    <Icon name="Gift" className="text-primary" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 leading-tight">
+                    НЕ УВЕРЕНЫ В РЕЗУЛЬТАТЕ?
+                  </h3>
+                  <p className="text-base leading-relaxed text-muted-foreground mb-6">
+                    Не уверены что это действительно может так хорошо работать?
+                  </p>
+                  <div className="inline-block px-5 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl text-sm">
+                    Мы сделаем бесплатный тестовый запуск
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
