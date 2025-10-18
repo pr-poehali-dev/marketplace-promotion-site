@@ -22,33 +22,53 @@ const Index = () => {
       }} />
 
       <div className="relative z-10 container mx-auto px-6 py-24 max-w-7xl">
-        {/* Header tag */}
-        <div className="flex justify-center mb-20">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-muted/50 backdrop-blur-xl">
-            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium tracking-wide text-muted-foreground">
-              Новый подход к рекламе на WB
-            </span>
+        {/* Hero Section */}
+        <div className="text-center mb-24 max-w-5xl mx-auto">
+          {/* Badge */}
+          <div className="flex justify-center mb-8">
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-muted/50 backdrop-blur-xl">
+              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span className="text-sm font-medium tracking-wide text-muted-foreground">
+                Новый подход к рекламе на маркетплейсах
+              </span>
+            </div>
           </div>
+
+          {/* Main headline */}
+          <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[1.1] tracking-tight mb-8">
+            Системно приводим продажи <br />с внешнего трафика на ваши{' '}
+            <span className="relative inline-block">
+              <span className="relative z-10 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                карточки товаров
+              </span>
+              <div className="absolute bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30 blur-lg" />
+            </span>
+            {' '}на маркетплейсах
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+            Много, официально и не превышая ДРР
+          </p>
+
+          {/* CTA Button */}
+          <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white text-lg font-semibold rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105">
+            <span>Подробнее</span>
+            <Icon name="ArrowRight" size={20} className="group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
 
-        {/* Main headline */}
-        <div className="text-center mb-32">
-          <h1 className="text-[clamp(2.5rem,8vw,7rem)] font-bold leading-[0.95] tracking-tighter mb-8">
-            <span className="block text-muted-foreground">Но мы не просто</span>
-            <span className="block text-foreground">
-              таргетологи,
-            </span>
-            <span className="block mt-2">
-              мы еще и{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-                  селлеры
-                </span>
-                <div className="absolute bottom-2 left-0 right-0 h-4 bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30 blur-xl" />
-              </span>
-            </span>
-          </h1>
+        {/* Spacer */}
+        <div className="mb-20" />
+
+        {/* Section Title */}
+        <div className="text-center mb-16">
+          <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight tracking-tight mb-4">
+            <span className="text-muted-foreground">Но мы не просто</span>
+            <br />
+            <span className="text-foreground">таргетологи, </span>
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">мы еще и селлеры</span>
+          </h2>
         </div>
 
         {/* Three cards */}
