@@ -196,6 +196,104 @@ const Index = () => {
           </div>
         </div>
 
+        {/* How We Work Section */}
+        <div className="mt-32 mb-20">
+          <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-center mb-20 tracking-tight">
+            Схема работы
+          </h2>
+
+          <div className="max-w-6xl mx-auto relative">
+            {/* Connecting line - desktop */}
+            <div className="hidden md:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20" />
+            
+            {/* Steps */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+              {/* Step 1 */}
+              <div className="group relative flex flex-col items-center text-center">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    1
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center border border-primary/20 mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="Search" className="text-primary" size={28} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-foreground font-medium">
+                  Смотрим ваш магазин и принимаем решение, подходит ли на текущий момент ваш товар для внешнего трафика
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="group relative flex flex-col items-center text-center">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    2
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center border border-primary/20 mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="FileText" className="text-primary" size={28} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-foreground font-medium">
+                  Заключаем договор
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="group relative flex flex-col items-center text-center">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    3
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center border border-primary/20 mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="Palette" className="text-primary" size={28} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-foreground font-medium">
+                  Создаем и согласовываем рекламные креативы
+                </p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="group relative flex flex-col items-center text-center">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    4
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center border border-primary/20 mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="Rocket" className="text-primary" size={28} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-foreground font-medium">
+                  Запускаем рекламу
+                </p>
+              </div>
+
+              {/* Step 5 */}
+              <div className="group relative flex flex-col items-center text-center">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl font-bold text-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    5
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center border border-primary/20 mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="TrendingUp" className="text-primary" size={28} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-foreground font-medium">
+                  Анализируем полученные цифры и масштабируемся
+                </p>
+              </div>
+            </div>
+
+            {/* Vertical connecting lines - mobile */}
+            <div className="md:hidden absolute left-10 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20" />
+          </div>
+        </div>
+
         {/* Floating elements */}
         <div className="absolute top-40 right-20 w-2 h-2 rounded-full bg-primary animate-ping opacity-30" />
         <div className="absolute bottom-40 left-20 w-3 h-3 rounded-full bg-secondary animate-pulse opacity-20" />
